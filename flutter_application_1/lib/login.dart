@@ -1,17 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/signup.dart';
-// class LoginApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'Login Page',
-//       theme: ThemeData(
-//         primarySwatch: Colors.blue,
-//       ),
-//       home: LoginPage(),
-//     );
-//   }
-// }
+
 
 class LoginPage extends StatefulWidget {
   @override
@@ -62,9 +51,6 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
                     _formKey.currentState!.save();
-                    // Handle login logic here
-                    print('Email: $_email');
-                    print('Password: $_password');
                   }
                 },
                 child: Text('Login'),

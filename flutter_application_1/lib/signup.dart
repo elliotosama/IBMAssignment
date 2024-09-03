@@ -81,10 +81,6 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
                     _formKey.currentState!.save();
-                    // Handle registration logic here
-                    print('Name: $_name');
-                    print('Email: $_email');
-                    print('Password: $_password');
                   }
                 },
                 child: Text('Register'),
